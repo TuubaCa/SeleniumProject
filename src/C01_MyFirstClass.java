@@ -26,7 +26,7 @@ Satırı Büyütme/Küçültme: Satırı büyütmek veya küçültmek için Ctrl
      */
     public static void main(String[] args) {
         //set Property
-        System.setProperty("webdriver.chrome.driver", "/Users/tubakara/IdeaProjects/SeleniumProject/Drivers/chromedriver");//bu işlem selenium 4.6 sonrasi gerekmez.
+        System.setProperty("webdriver.chrome.driver", "Drivers/chromedriver.exe");//bu işlem selenium 4.6 sonrasi gerekmez.
 
         //driver objesi olustur
         // WebDriver driver = new ChromeDriver();//polimorfizme örnek
@@ -34,14 +34,13 @@ Satırı Büyütme/Küçültme: Satırı büyütmek veya küçültmek için Ctrl
         // driver=new EdgeDriver();
 
         //driver methodlarını kullan.
-        driver.get("https://www.google.com");//get() methodu ile yeni bir sayfa yükleriz
+        driver.get("https://google.com");//get() methodu ile yeni bir sayfa yükleriz
 
         //close browser
-        driver.close();//close() methodu ile son acılan pencere kapatılır.
+        driver.close();//close() meth ile son acılan pencere kapatılır.
 
         //quit
-        driver.quit();//quit() methodu ile oturumda acılan tüm pencereler kapatılır.
-        driver.quit();//quit() methodu ile oturumda acılan tüm pencereler kapatılır.
+        driver.quit();//quit() meth ile oturumda acılan tüm pencereler kapatılır
 
 
     }
